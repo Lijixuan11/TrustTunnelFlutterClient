@@ -9,7 +9,9 @@ enum LocaleType {
   it(Locale('it')),
   ru(Locale('ru')),
   ja(Locale('ja')),
-  zh(Locale('zh')),
+  /// Simplified Chinese (`intl_zh.arb`, `@@locale` = zh).
+  /// Traditional Chinese is not part of this catalog.
+  zh(Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hans')),
   ko(Locale('ko'));
 
   final Locale? value;

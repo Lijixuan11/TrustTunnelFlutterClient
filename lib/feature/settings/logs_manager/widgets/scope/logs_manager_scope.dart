@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:trusttunnel/common/controller/widget/state_consumer.dart';
 import 'package:trusttunnel/common/extensions/context_extensions.dart';
+import 'package:trusttunnel/common/localization/localization.dart';
 import 'package:trusttunnel/feature/settings/logs_manager/controller/logs_manager_controller.dart';
 import 'package:trusttunnel/feature/settings/logs_manager/controller/logs_manager_state.dart';
 import 'package:trusttunnel/feature/settings/logs_manager/model/export_logs_archive.dart';
@@ -58,6 +59,7 @@ class _LogsManagerScopeState extends State<LogsManagerScope> {
     VoidCallback? onError,
     VoidCallback? onCancelled,
   }) => _controller.export(
+    dialogTitle: context.ln.downloadAppLogs,
     onArchiveReady: onArchiveReady,
     onError: onError,
     onCancelled: onCancelled,

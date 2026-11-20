@@ -20,6 +20,7 @@ final class LogsManagerController extends BaseStateController<LogsManagerState> 
   });
 
   void export({
+    String? dialogTitle,
     ValueChanged<ExportLogsArchive>? onArchiveReady,
     VoidCallback? onError,
     VoidCallback? onCancelled,
@@ -32,7 +33,7 @@ final class LogsManagerController extends BaseStateController<LogsManagerState> 
       final archive = await _repository.createArchive();
 
       final result = await _repository.pickFilePath(
-        dialogTitle: 'Export app logs and system info',
+        dialogTitle: dialogTitle,
         fileName: archive.name,
         type: ExportFileType.custom,
         allowedExtensions: ['zip'],

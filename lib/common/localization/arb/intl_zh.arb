@@ -1,0 +1,293 @@
+{
+  "@@locale": "zh",
+  "windowMinimize": "最小化",
+  "windowMaximize": "最大化",
+  "windowRestore": "还原",
+  "windowClose": "关闭",
+  "appTitle": "VPN",
+  "servers": "服务器",
+  "routing": "路由",
+  "settings": "设置",
+  "addServer": "添加服务器",
+  "add": "添加",
+  "editServer": "编辑服务器",
+  "serverName": "服务器名称",
+  "username": "用户名",
+  "enterUsername": "输入用户名",
+  "password": "密码",
+  "enterPassword": "输入密码",
+  "protocol": "协议",
+  "advanced": "高级",
+  "tlsFingerprint": "TLS 指纹",
+  "tlsFingerprintChrome": "Chrome",
+  "tlsFingerprintChromeCanary": "Chrome Canary",
+  "tlsFingerprintSafari": "Safari",
+  "tlsFingerprintFirefox": "Firefox",
+  "tlsFingerprintOkHttp": "OkHttp",
+  "tlsFingerprintOpenSsl": "OpenSSL",
+  "tlsFingerprintBoringSsl": "BoringSSL",
+  "routingProfile": "路由配置",
+  "enterDnsServerLabel": "DNS 服务器地址，每行一个",
+  "enterDnsServerHint": "IP 地址、tls://、https://、quic://、h3:// 或 sdns://",
+  "enterDnsServerHelper": "如未填写，将使用 46.243.231.30（AdGuard DNS 非过滤）",
+  "enterIpAddressLabel": "地址",
+  "enterIpAddressHint": "IPv4/IPv6 或域名",
+  "enterIpAddressHelper": "未指定端口时使用 443",
+  "enterDomainLabel": "服务器证书中的域名",
+  "enterDomainHint": "域名或 IP 地址",
+  "defaultProfile": "默认配置",
+  "serversEmptyTitle": "创建第一台服务器",
+  "serversEmptyDescription": "创建一台服务器，以便安全、匿名地传输数据",
+  "create": "创建",
+  "save": "保存",
+  "unknownError": "未知错误",
+  "nameAlreadyExistError": "该名称已被使用",
+  "ipAddressWrongFieldError": "请使用 x.x.x.x 或 x:x:x:x:x:x:x:x 格式",
+  "domainWrongFieldError": "请使用域名或 IP 地址",
+  "dnsServersWrongFieldError": "请使用 IP 地址、tls://、https://、quic://、h3:// 或 sdns://",
+  "urlWrongFieldError": "请检查 URL：格式似乎不正确",
+  "pleaseFillField": "请填写此字段",
+  "editProfileName": "编辑名称",
+  "deleteProfile": "删除配置",
+  "deleteProfileDialogTitle": "删除配置？",
+  "addProfile": "添加配置",
+  "enterRulesHint": "路由规则可以是以下类型：\n- 任意层级的域名\n- IP 地址\n- 带端口的 IP 地址\n- 带子网掩码的 IP 地址",
+  "changeDefaultRoutingMode": "更改默认路由",
+  "deleteAllRules": "删除全部规则",
+  "deleteAllRulesDialogTitle": "删除全部规则？",
+  "cancel": "取消",
+  "delete": "删除",
+  "deleteAllRulesDialogDescription": "将删除 {profileName} 中的全部规则",
+  "@deleteAllRulesDialogDescription": {
+    "placeholders": {
+      "profileName": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteProfileDescription": "将删除 {profileName}",
+  "@deleteProfileDescription": {
+    "placeholders": {
+      "profileName": {
+        "type": "String"
+      }
+    }
+  },
+  "changeDefaultRoutingModeDialogDescription": "默认情况下，所有流量都将按此规则进行路由",
+  "discardChanges": "放弃更改",
+  "discardChangesDialogTitle": "放弃更改？",
+  "discardChangesDialogDescription": "确定要放弃所有更改吗？",
+  "about": "关于",
+  "connectionLog": "连接日志",
+  "excludedRoutes": "排除路由",
+  "github": "GitHub",
+  "typeSomething": "输入内容",
+  "deleteServer": "删除服务器",
+  "deleteServerDialogTitle": "删除服务器？",
+  "deleteServerDescription": "将删除服务器 <b>{serverName}</b>",
+  "@deleteServerDescription": {
+    "placeholders": {
+      "serverName": {
+        "type": "String"
+      }
+    }
+  },
+  "serverDeletedSnackbar": "已删除服务器 <b>{serverName}</b>",
+  "@serverDeletedSnackbar": {
+    "placeholders": {
+      "serverName": {
+        "type": "String"
+      }
+    }
+  },
+  "profileDeletedSnackbar": "已删除配置 <b>{profileName}</b>",
+  "@profileDeletedSnackbar": {
+    "placeholders": {
+      "profileName": {
+        "type": "String"
+      }
+    }
+  },
+  "changesSavedSnackbar": "更改已保存",
+  "serverCreatedSnackbar": "已创建服务器 <b>{serverName}</b>",
+  "@serverCreatedSnackbar": {
+    "placeholders": {
+      "serverName": {
+        "type": "String"
+      }
+    }
+  },
+  "profileCreatedSnackbar": "已创建配置 <b>{profileName}</b>",
+  "@profileCreatedSnackbar": {
+    "placeholders": {
+      "profileName": {
+        "type": "String"
+      }
+    }
+  },
+  "allRulesDeleted": "已删除全部规则",
+  "quic": "QUIC",
+  "http2": "HTTP/2",
+  "bypass": "绕过",
+  "vpn": "VPN",
+  "profileNameLabel": "配置名称",
+  "customSniLabel": "自定义 SNI",
+  "customSniHint": "example.com",
+  "customSniWrongFieldError": "请使用 example.com 这种格式",
+  "tlsAuthenticationType": "TLS 认证类型",
+  "tlsAuthenticationClientRandom": "Client Random",
+  "tlsAuthenticationClientRandomAuthKey": "Client Random 认证密钥",
+  "clientRandomAuthKeyLabel": "Client Random 认证密钥，十六进制序列",
+  "clientRandomAuthKeyHint": "abcdef",
+  "clientRandomAuthKeyHelper": "最长 64 个字符",
+  "clientRandomAuthKeySlashError": "认证密钥不支持包含“/”的值",
+  "clientRandomLabel": "Client Random，十六进制序列",
+  "clientRandomHint": "abcdef、0a0b0c/0f0f0f",
+  "clientRandomHelper": "最长 64 个字符",
+  "pemLabel": "自签名证书，PEM 文件",
+  "importHint": "导入",
+  "ipv6Label": "允许经由服务器建立 IPv6 连接",
+  "tlsOutOfBoundsError": "掩码和值的长度必须相同",
+  "tlsWrongFieldError": "十六进制只能包含字符 0-9、a-f",
+  "tlsWrongValueError": "值的字符数必须为偶数",
+  "tlsWrongMaskError": "掩码和值的字符数都必须为偶数",
+  "somethingWentWrongSnackbar": "出现问题，请稍后重试",
+  "appLogging": "应用日志",
+  "downloadAppLogs": "导出应用日志和系统信息",
+  "loggingLevel": "日志级别",
+  "loggingLevelBasic": "默认",
+  "loggingLevelDetailed": "调试",
+  "loggingLevelDetailedDescription": "记录更多事件，用于排查问题",
+  "sensitiveData": "敏感数据",
+  "sensitiveDataExcluded": "已剔除",
+  "sensitiveDataExcludedDescription": "不会记录敏感数据",
+  "sensitiveDataIncluded": "包含",
+  "sensitiveDataIncludedDescription": "日志可能包含敏感数据。密码和服务器访问链接永远不会被记录",
+  "changeSensitiveDataLoggingDialogTitle": "日志可能包含敏感数据",
+  "changeSensitiveDataLoggingDialogDescription": "建议先删除应用日志，以清除其中的敏感数据，然后再切换到“已剔除”",
+  "continueAnyway": "仍要继续",
+  "confirm": "确认",
+  "deleteLogs": "删除日志",
+  "share": "分享",
+  "exportCanceledSnackbar": "已取消导出",
+  "deleteAppLogs": "删除应用日志",
+  "deleteAppLogsDialogTitle": "删除应用日志？",
+  "deleteAppLogsDialogDescription": "将清空应用日志。不会删除应用设置或连接日志",
+  "appLogsDeletedSnackbar": "已删除应用日志",
+  "appLogsExportedSnackbar": "已导出应用日志",
+  "exportingLogs": "正在导出日志…",
+  "connectionLogEmptyTitle": "尚无连接记录",
+  "connectionLogEmptyDescription": "连接日志会显示流量的去向和路由方式。连接到服务器并打开一个网站，即可生成第一条记录",
+  "exitDialogTitle": "退出 TrustTunnel？",
+  "exitDialogDescription": "这会断开与当前服务器的连接",
+  "quit": "退出",
+  "dontQuit": "暂不退出",
+  "trayStatus": "状态：{status}",
+  "@trayStatus": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "trayStatusConnected": "已连接",
+  "trayStatusConnecting": "正在连接…",
+  "trayStatusDisconnected": "已断开",
+  "connect": "连接",
+  "disconnect": "断开",
+  "connectTo": "连接到",
+  "logging": "日志",
+  "otherServers": "其他服务器",
+  "trayOpenApp": "打开 {appName}",
+  "@trayOpenApp": {
+    "placeholders": {
+      "appName": {
+        "type": "String"
+      }
+    }
+  },
+  "trayQuitApp": "退出 {appName}",
+  "@trayQuitApp": {
+    "placeholders": {
+      "appName": {
+        "type": "String"
+      }
+    }
+  },
+  "launchAndConnection": "启动和连接",
+  "launch": "启动",
+  "launchAppAtSystemLogin": "登录系统时启动应用",
+  "openHomeScreenAutomatically": "自动打开主屏幕",
+  "connection": "连接",
+  "autoConnectOnAppLaunch": "启动应用时自动连接",
+  "autoConnectNoServersAdded": "尚未添加服务器。要让此设置生效，请先添加一台服务器",
+  "copyLink": "复制链接",
+  "duplicate": "创建副本",
+  "serverLinkCopied": "已复制服务器链接",
+  "serverDuplicated": "已创建服务器副本",
+  "edit": "编辑",
+  "serverCopyNumberedName": "{name} {number, plural, =0{（副本）} other{（副本 {number}）}}",
+  "@serverCopyNumberedName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "serverNumberedName": "{name} {number}",
+  "@serverNumberedName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "appVersion": "应用版本",
+  "checkForUpdates": "检查更新",
+  "checkingForUpdates": "正在检查更新…",
+  "upToDate": "已是最新版本",
+  "updateVersionAvailable": "版本 {version} 可用",
+  "@updateVersionAvailable": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "updateConnectionWarning": "TrustTunnel 将断开当前服务器并重新启动以安装更新",
+  "updateAction": "更新",
+  "downloadingUpdate": "正在下载版本 {version}…",
+  "@downloadingUpdate": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyingUpdate": "正在验证更新…",
+  "preparingUpdate": "正在准备安装…",
+  "updateCheckError": "无法检查更新",
+  "updateDownloadError": "无法下载更新",
+  "updateDownloadErrorDescription": "请检查网络连接，然后重试",
+  "updateDamagedError": "更新文件已损坏",
+  "updatePermissionError": "Windows 需要获得权限才能安装更新",
+  "updatePermissionErrorDescription": "系统询问时，请点击“是”以允许更改",
+  "updateInstallError": "无法安装更新",
+  "updatedToVersion": "已更新至版本 {version}",
+  "@updatedToVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "updateAvailable": "有可用更新",
+  "tryAgain": "重试",
+  "general": "通用"
+}

@@ -40,7 +40,24 @@ final class Localization {
     return LocaleType.en.value!;
   }
 
-  static bool get isDeviceLocaleSupported => _delegate.isSupported(deviceLocale);
+  static bool get isDeviceLocaleSupported {
+    if (!_delegate.isSupported(deviceLocale)) return false;
+
+    // intl_zh.arb is Simplified Chinese. Keep Traditional Chinese on English
+    // until a zh_Hant catalog exists.
+    return !_isTraditionalChinese(deviceLocale);
+  }
+
+  static bool _isTraditionalChinese(Locale locale) {
+    if (locale.languageCode != 'zh') return false;
+
+    final script = locale.scriptCode?.toLowerCase();
+    if (script == 'hant') return true;
+    if (script == 'hans') return false;
+
+    final country = locale.countryCode?.toUpperCase();
+    return country == 'TW' || country == 'HK' || country == 'MO';
+  }
 
   static Future<AppLocalizations> load(Locale locale) => AppLocalizations.load(locale);
 
